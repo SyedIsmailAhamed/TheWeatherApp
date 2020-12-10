@@ -59,14 +59,19 @@ open class Messages: SwiftMessages {
 }
 
 extension Double {
-    func toCelsius() -> String {
-        let result = self - 273.15
-        return String(format: "%.0f",result) + "\u{00B0}"
+    func tempDegrees() -> String {
+        let selectedDegrees = Commons.unitesofMeasurement ?? .celsius
+        let degreeString = "\u{00B0}"
+        switch selectedDegrees {
+            case .celsius:
+                let result = self - 273.15
+                return String(format: "%.0f",result) + degreeString
+            case .fahrenheit:
+                let result = self * 9/5 - 459.67
+                return String(format: "%.0f",result) + degreeString
+        }
     }
-    func toFahrenheit() -> String {
-        let result = self * 9/5 - 459.67
-        return String(format: "%.0f",result) + "\u{00B0}"
-    }
+    
     func toString() -> String {
         return String(format: "%.0f",self)
     }
@@ -109,3 +114,8 @@ extension UICollectionView{
         return self.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! T
     }
 }
+extension Notification.Name {
+    static let latestWeatherDataFetched = Notification.Name("com.syed.TheWeatherApp")
+}
+
+

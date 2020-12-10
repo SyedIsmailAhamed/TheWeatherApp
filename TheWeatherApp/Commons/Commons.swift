@@ -20,7 +20,7 @@ class Commons {
 
     static var currentUser: User?
     static var currentLocation: CLLocation?
-
+    static var unitesofMeasurement : UnitsofMeasurement?
     static func showActivityIndicator(){
         ProgressHUD.colorHUD = UIColor.color(r: 0, g: 0, b: 0, alpha: 0.5)
         ProgressHUD.show(nil, interaction: false)
@@ -32,4 +32,9 @@ class Commons {
     class func shared() -> Commons {
         return sharedInstance
     }
+}
+
+enum UnitsofMeasurement {
+    case celsius
+    case fahrenheit
 }

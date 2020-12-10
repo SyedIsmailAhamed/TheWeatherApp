@@ -24,7 +24,7 @@ class TimelyCollectionViewCell: UICollectionViewCell {
         if let date = model.dt{
             titleLabel.text = date.toDateString(format: "ha")
         }
-        if let temp = model.temp?.toCelsius(){
+        if let temp = model.temp?.tempDegrees(){
             descLabel.text = temp 
         }
 

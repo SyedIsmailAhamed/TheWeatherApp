@@ -57,8 +57,30 @@ extension DetailsViewController : UITableViewDelegate{
         if let currentModel = viewModel?.selectedDay {
             headerView.loadData(weatherModel: currentModel)
         }
+        headerView.didSelectUnitsButton = {[weak self]status in
+            guard let self = self else { return  }
+            self.showOptions()
+        }
         headerView.backgroundColor = .white
         return headerView
+    }
+    func showOptions(){
+        let alert = UIAlertController(title: "Select an option", message: "", preferredStyle: .actionSheet)
+        let celsius = UIAlertAction(title: "Celsius", style: UIAlertAction.Style.default, handler: {
+            (_)in
+            let units = UnitsofMeasurement.celsius
+            Commons.unitesofMeasurement = units
+            self.detailsTableView.reloadData()
+        })
+        let fahrenheit = UIAlertAction(title: "Fahrenheit", style: UIAlertAction.Style.default, handler: {
+            (_)in
+            let units = UnitsofMeasurement.fahrenheit
+            Commons.unitesofMeasurement = units
+            self.detailsTableView.reloadData()
+        })
+        alert.addAction(celsius)
+        alert.addAction(fahrenheit)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

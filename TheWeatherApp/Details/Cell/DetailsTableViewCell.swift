@@ -59,10 +59,10 @@ class DetailsTableViewCell: UITableViewCell {
         chanceofRainLabel.text = model.rain?.toPercentage() ?? "0%"
         windSpeedLabel.text = (model.wind_speed?.toString() ?? "") + " mph"
         pressureLabel.text = (model.pressure?.toString() ?? "") + " hPa"
-        tempMorningLabel.text = model.temp?.morn?.toCelsius()
-        tempDayLabel.text = model.temp?.day?.toCelsius()
-        tempEveningLabel.text = model.temp?.eve?.toCelsius()
-        tempNightLabel.text = model.temp?.night?.toCelsius()
+        tempMorningLabel.text = model.temp?.morn?.tempDegrees()
+        tempDayLabel.text = model.temp?.day?.tempDegrees()
+        tempEveningLabel.text = model.temp?.eve?.tempDegrees()
+        tempNightLabel.text = model.temp?.night?.tempDegrees()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

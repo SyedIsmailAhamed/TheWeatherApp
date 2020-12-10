@@ -22,16 +22,13 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="04I-UI-AtG">
                     <rect key="frame" x="16" y="16" width="382" height="179"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36x-VJ-ALw" customClass="CityLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36x-VJ-ALw" customClass="CityLabel" customModule="TheWeatherApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="25"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="25" id="uee-nj-On2"/>
-                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyT-kr-N9O" customClass="HeaderTitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyT-kr-N9O" customClass="HeaderTitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="33" width="382" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="Mw4-FI-vIY"/>
@@ -40,7 +37,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74k-x1-7yp" customClass="TemperatureLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74k-x1-7yp" customClass="TemperatureLabel" customModule="TheWeatherApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="66" width="382" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="80" id="EQ1-PS-zDo"/>
@@ -52,18 +49,46 @@
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="13Y-T2-Hmh">
                             <rect key="frame" x="0.0" y="154" width="382" height="25"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztL-I6-Smk" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="2.5" width="187" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztL-I6-Smk" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="2.5" width="57" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-UX-8Qa" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                                    <rect key="frame" x="195" y="2.5" width="187" height="20.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-UX-8Qa" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="65" y="2.5" width="57" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnZ-cN-hdK" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="130" y="2.5" width="57" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sj-4q-p1T" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="195" y="2.5" width="57" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyI-QN-1sf" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="260" y="0.0" width="57" height="25"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U98-IQ-qlO">
+                                    <rect key="frame" x="325" y="0.0" width="57" height="25"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                    <state key="normal" title="C/F">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="unitsButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="if2-Ny-ajo"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="mgk-7h-XKh"/>
@@ -83,9 +108,10 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="citylabel" destination="36x-VJ-ALw" id="vdP-BH-7yW"/>
-                <outlet property="highLabel" destination="ztL-I6-Smk" id="9ei-Oc-eTr"/>
-                <outlet property="lowLabel" destination="YTJ-UX-8Qa" id="VHH-78-3cT"/>
+                <outlet property="highLabel" destination="qnZ-cN-hdK" id="oxa-n5-Ou3"/>
+                <outlet property="lowLabel" destination="9Sj-4q-p1T" id="Ef4-FW-YQJ"/>
                 <outlet property="temperatureLabel" destination="74k-x1-7yp" id="ga0-E8-cR6"/>
+                <outlet property="unitsButton" destination="U98-IQ-qlO" id="2dw-h2-58P"/>
                 <outlet property="weatherLabel" destination="nyT-kr-N9O" id="2FL-Js-1P8"/>
             </connections>
             <point key="canvasLocation" x="-3" y="68"/>
@@ -93,19 +119,26 @@
     </objects>
     <designables>
         <designable name="36x-VJ-ALw">
-            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="17.5" height="20.5"/>
         </designable>
         <designable name="74k-x1-7yp">
-            <size key="intrinsicContentSize" width="147" height="70"/>
+            <size key="intrinsicContentSize" width="74.5" height="67.5"/>
+        </designable>
+        <designable name="9Sj-4q-p1T">
+            <size key="intrinsicContentSize" width="32.5" height="20.5"/>
         </designable>
         <designable name="YTJ-UX-8Qa">
-            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="17.5" height="20.5"/>
         </designable>
+        <designable name="gyI-QN-1sf"/>
         <designable name="nyT-kr-N9O">
-            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="17.5" height="20.5"/>
+        </designable>
+        <designable name="qnZ-cN-hdK">
+            <size key="intrinsicContentSize" width="32.5" height="20.5"/>
         </designable>
         <designable name="ztL-I6-Smk">
-            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="17.5" height="20.5"/>
         </designable>
     </designables>
     <resources>

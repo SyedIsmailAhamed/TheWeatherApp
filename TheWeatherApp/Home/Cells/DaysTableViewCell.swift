@@ -23,8 +23,8 @@ class DaysTableViewCell: UITableViewCell {
             titleLabel.text = date.toDateString(format: "EEEE")
         }
 
-        maxLabel.text = model.temp?.max?.toCelsius()
-        minLabel.text = model.temp?.min?.toCelsius()
+        maxLabel.text = model.temp?.max?.tempDegrees()
+        minLabel.text = model.temp?.min?.tempDegrees()
 
         if let weatherArray = model.weather,let currentModel = weatherArray.first,let iconName = currentModel.icon{
             let urlString = Environment.imageURL.absoluteString + "\(iconName)@2x.png"

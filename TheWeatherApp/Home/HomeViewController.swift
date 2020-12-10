@@ -97,6 +97,10 @@ extension HomeViewController : UITableViewDelegate{
             if let currentModel = viewModel?.weatherModel {
                 headerView.loadData(weatherModel: currentModel)
             }
+            headerView.didSelectUnitsButton = {[weak self]status in
+                guard let self = self else { return  }
+                self.showOptions()
+            }
             headerView.backgroundColor = .white
             return headerView
         }
@@ -114,6 +118,24 @@ extension HomeViewController : UITableViewDelegate{
         let detailsVM = DetailsViewModel(day: selectedModel, parentModel: parentModel)
         detailsVC.viewModel = detailsVM
         self.present(detailsVC, animated: true, completion: nil)
+    }
+    func showOptions(){
+        let alert = UIAlertController(title: "Select an option", message: "", preferredStyle: .actionSheet)
+        let celsius = UIAlertAction(title: "Celsius", style: UIAlertAction.Style.default, handler: {
+            (_)in
+            let units = UnitsofMeasurement.celsius
+            Commons.unitesofMeasurement = units
+            self.tblView.reloadData()
+        })
+        let fahrenheit = UIAlertAction(title: "Fahrenheit", style: UIAlertAction.Style.default, handler: {
+            (_)in
+            let units = UnitsofMeasurement.fahrenheit
+            Commons.unitesofMeasurement = units
+            self.tblView.reloadData()
+        })
+        alert.addAction(celsius)
+        alert.addAction(fahrenheit)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

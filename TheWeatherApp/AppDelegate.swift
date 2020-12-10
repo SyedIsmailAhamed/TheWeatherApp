@@ -8,6 +8,7 @@
 import UIKit
 import RealmSwift
 import CoreLocation
+import BackgroundTasks
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,11 +31,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.syed.TheWeatherApp",
+                                        using: nil) { (task) in
+            self.handleAppRefreshTask(task: task as! BGAppRefreshTask)
 
+        }
        
         return true
     }
 
+
+    func handleAppRefreshTask(task: BGAppRefreshTask) {
+        task.expirationHandler = {
+            task.setTaskCompleted(success: false)
+        }
+        BackgroundDataManager.shared().fetchWeatherData { (status) in
+            print("latest weather data fetched in background")
+            NotificationCenter.default.post(name: .latestWeatherDataFetched,
+                                            object: self,
+                                            userInfo: nil)
+            task.setTaskCompleted(success: true)
+        }
+        scheduleBackgroundWeatherFetch()
+    }
+
+    func scheduleBackgroundWeatherFetch() {
+        let weatherTask = BGAppRefreshTaskRequest(identifier: "com.syed.TheWeatherApp")
+        weatherTask.earliestBeginDate = Date(timeIntervalSinceNow: 10)
+        do {
+            try BGTaskScheduler.shared.submit(weatherTask)
+        } catch {
+            print("Unable to submit task: \(error.localizedDescription)")
+        }
+    }
    
     // MARK: UISceneSession Lifecycle
 

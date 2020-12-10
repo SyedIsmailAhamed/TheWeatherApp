@@ -14,16 +14,27 @@ class HomeHeaderView: UITableViewHeaderFooterView {
     @IBOutlet weak var highLabel: UILabel!
     @IBOutlet weak var citylabel: CityLabel!
     @IBOutlet weak var lowLabel: UILabel!
+    @IBOutlet weak var unitsButton: UIButton!
 
-    override class func awakeFromNib() {
+    var didSelectUnitsButton: ((Bool)->())?
+
+    override  func awakeFromNib() {
+        unitsButton.setTitle("C° / F°", for: .normal)
     }
+
+    @IBAction func unitsButtonTapped(_ sender: Any) {
+        if let buttonTapped = didSelectUnitsButton{
+            buttonTapped(true)
+        }
+    }
+
 
     func loadData(weatherModel : HeaderModelable){
         citylabel.text = weatherModel.cityTitle
         weatherLabel.text = weatherModel.weatherTitle
-        temperatureLabel.text = weatherModel.temperature.toCelsius()
-        highLabel.text = "H:" + weatherModel.maxTemp.toCelsius()
-        lowLabel.text = "L:" + weatherModel.minTemp.toCelsius()
+        temperatureLabel.text = weatherModel.temperature.tempDegrees()
+        highLabel.text = "H:" + weatherModel.maxTemp.tempDegrees()
+        lowLabel.text = "L:" + weatherModel.minTemp.tempDegrees()
     }
 
 
