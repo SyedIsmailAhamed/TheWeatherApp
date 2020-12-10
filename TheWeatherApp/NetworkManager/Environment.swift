@@ -13,6 +13,9 @@ public enum Environment {
         enum Plist {
             static let rootURL = "ROOT_URL"
             static let apiKey = "API_KEY"
+            static let imageURL = "IMAGE_URL"
+
+
         }
     }
 
@@ -35,6 +38,15 @@ public enum Environment {
         return url
     }()
 
+    static let imageURL: URL = {
+        guard let rootURLstring = Environment.infoDictionary[Keys.Plist.imageURL] as? String else {
+            fatalError("imageURL  not set in plist for this environment")
+        }
+        guard let url = URL(string: rootURLstring) else {
+            fatalError("imageURL  is invalid")
+        }
+        return url
+    }()
     static let apiKey: String = {
         guard let apiKey = Environment.infoDictionary[Keys.Plist.apiKey] as? String else {
             fatalError("API Key not set in plist for this environment")

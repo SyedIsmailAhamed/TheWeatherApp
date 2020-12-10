@@ -11,6 +11,7 @@
 #include "Pods/Target Support Files/Pods-TheWeatherApp/Pods-TheWeatherApp.release.xcconfig"
 
 ROOT_URL = https:/$()/api.openweathermap.org/data/2.5/onecall?
+IMAGE_URL =  http:/$()openweathermap.org/img/wn/
 
 // Keys
 API_KEY = 65df3121549a9bde0f67ac2e4e35d24f
