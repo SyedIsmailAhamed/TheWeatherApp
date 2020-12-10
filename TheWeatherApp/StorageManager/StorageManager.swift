@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 import Unrealm
+import CoreLocation
 
 
 class StorageManager {
@@ -79,6 +80,8 @@ class User : Realmable {
         return currentUser
     }
     var iD : String?
+    var currentLocation: CLLocation?
+
 
     static func primaryKey() -> String? {
         return "iD"

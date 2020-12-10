@@ -7,9 +7,13 @@
 
 import UIKit
 import RealmSwift
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+import CoreLocation
 
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate {
+
+    var locationManager: CLLocationManager!
+    var currentLocation: CLLocation?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -29,9 +33,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        setupLocationManager()
         return true
     }
 
+    func setupLocationManager(){
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        self.locationManager?.requestAlwaysAuthorization()
+        locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager?.startUpdatingLocation()
+
+    }
+    // Below method will provide you current location.
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if currentLocation == nil {
+            currentLocation = locations.last
+            Commons.currentUser?.currentLocation = currentLocation
+//            locationManager?.stopMonitoringSignificantLocationChanges()
+//            let locationValue:CLLocationCoordinate2D = manager.location!.coordinate
+//
+//            print("locations = \(locationValue)")
+//
+//            locationManager?.stopUpdatingLocation()
+        }
+    }
+
+    // Below Mehtod will print error if not able to update location.
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error")
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

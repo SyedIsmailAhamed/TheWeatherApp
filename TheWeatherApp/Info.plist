@@ -66,5 +66,18 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>LouisGeorgeCafe-Bold</string>
+		<string>LouisGeorgeCafe</string>
+	</array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>We would like to get yor location to show weather data</string>
+
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>We would like to get yor location to show weather data</string>
+
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>We would like to get yor location to show weather data</string>
 </dict>
 </plist>

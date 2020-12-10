@@ -1,33 +1,20 @@
 //
-//  HomeViewController.swift
+//  BaseViewController.swift
 //  TheWeatherApp
 //
-//  Created by OSE on 12/9/20.
+//  Created by OSE on 12/10/20.
 //
 
 import UIKit
-import Messages
 
-class HomeViewController: BaseViewController {
-
-    var viewModel : HomeViewModel?
+class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        viewModel = HomeViewModel()
-        viewModel?.fetchWeatherData(completionHandler: {[weak self] (status) in
-            guard let self = self,
-                  let weatherModel = self.viewModel?.weatherModel else {return}
-            if status{
-                
-            }
-        })
-
+        self.view.backgroundColor = Colors.backgroundColor
         // Do any additional setup after loading the view.
-
     }
-
+    
 
     /*
     // MARK: - Navigation
