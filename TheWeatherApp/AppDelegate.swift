@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+
+        
         BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.syed.TheWeatherApp",
                                         using: nil) { (task) in
             self.handleAppRefreshTask(task: task as! BGAppRefreshTask)

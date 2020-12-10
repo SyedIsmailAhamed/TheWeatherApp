@@ -161,7 +161,11 @@ struct Hourly :Realmable, Mappable {
     }
 
 }
-struct Daily : Realmable,Mappable {
+struct Daily : Realmable,Mappable,Equatable {
+    static func == (lhs: Daily, rhs: Daily) -> Bool {
+        lhs.dt == rhs.dt
+    }
+
     var dt : Int?
     var sunrise : Int?
     var sunset : Int?

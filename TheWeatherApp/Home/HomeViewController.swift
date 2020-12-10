@@ -141,14 +141,14 @@ extension HomeViewController : UITableViewDelegate{
 
 extension HomeViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let daysCount = viewModel?.weatherModel?.daily?.count ?? 0
+        let daysCount = viewModel?.numberofRows() ?? 0
         return section == 0 ? 0 : daysCount
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : DaysTableViewCell = tableView.dequeueReusableCell(withIdentifier: DaysTableViewCell.Identifier, for: indexPath) as! DaysTableViewCell
 
-        if let currentModel = viewModel?.weatherModel?.daily?[indexPath.row]{
+        if let currentModel = viewModel?.getDaysModel(idxPath: indexPath){
             cell.loadData(model: currentModel)
         }
 

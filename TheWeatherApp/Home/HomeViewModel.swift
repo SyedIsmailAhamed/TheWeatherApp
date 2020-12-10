@@ -51,4 +51,12 @@ class HomeViewModel {
         }
     }
 
+    func numberofRows()->Int{
+        let daysCount = weatherModel?.daily?.count ?? 0
+         return daysCount
+    }
+    func getDaysModel(idxPath:IndexPath)->Daily?{
+        return weatherModel?.daily?[idxPath.row]
+    }
+
 }
