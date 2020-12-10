@@ -12,6 +12,7 @@ target 'TheWeatherApp' do
     pod 'ProgressHUD'
     pod 'RealmSwift'
     pod 'Unrealm'
+    pod 'AlamofireImage'
 
   target 'TheWeatherAppTests' do
     inherit! :search_paths

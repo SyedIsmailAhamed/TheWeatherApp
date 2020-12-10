@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - ObjectMapper (4.2.0)
   - ProgressHUD (13.4)
   - Realm (5.0.3):
@@ -17,6 +19,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.8)
+  - AlamofireImage
   - ObjectMapper
   - ProgressHUD
   - RealmSwift
@@ -26,6 +29,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireImage
     - ObjectMapper
     - ProgressHUD
     - Realm
@@ -36,6 +40,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
   Realm: bfca1699b61b0b17c3a69ae0e648314eae91fbdb
@@ -44,6 +49,6 @@ SPEC CHECKSUMS:
   SwiftMessages: 063ec9ffea3ffa7d17ba595157a9ec78e4fe045f
   Unrealm: ba1c168935344084ba28dd6bff5ded86f4837d7f
 
-PODFILE CHECKSUM: 347f10c0defee43d0ce62e22cd840e8b4af838c1
+PODFILE CHECKSUM: df2c921af9b4c2c7362e05a9d9b4fa8676cd9d15
 
 COCOAPODS: 1.10.0

@@ -24,7 +24,7 @@ class HomeHeaderView: UITableViewHeaderFooterView {
         if let weatherArr = weatherModel.current?.weather, weatherArr.count>0{
             weatherLabel.text = weatherArr[0].desc
         }
-        temperatureLabel.text = weatherModel.current?.temp?.toCelsius().toString()
+        temperatureLabel.text = weatherModel.current?.temp?.toCelsius()
        // highLabel.text = weatherModel.current.h
     }
     /*

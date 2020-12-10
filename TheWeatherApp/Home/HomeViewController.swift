@@ -24,8 +24,14 @@ class HomeViewController: BaseViewController {
     }
     func setupTableView(){
         tblView.estimatedSectionHeaderHeight = 300
-        let headerNib = UINib.init(nibName: "HomeHeaderView", bundle: Bundle.main)
-        tblView.register(headerNib, forHeaderFooterViewReuseIdentifier: "HomeHeaderView")
+        let headerNib = UINib.init(nibName: HomeHeaderView.Identifier, bundle: Bundle.main)
+        let timeNiB = UINib.init(nibName: TimelyDataHeaderView.Identifier, bundle: Bundle.main)
+
+        tblView.register(headerNib, forHeaderFooterViewReuseIdentifier: HomeHeaderView.Identifier)
+        tblView.register(timeNiB, forHeaderFooterViewReuseIdentifier: TimelyDataHeaderView.Identifier)
+
+
+
     }
 
     func fetchData(){
@@ -81,18 +87,32 @@ extension HomeViewController : UITableViewDelegate{
         return UITableView.automaticDimension
 
     }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HomeHeaderView") as! HomeHeaderView
-        if let currentModel = viewModel?.weatherModel{
-            headerView.loadData(weatherModel: currentModel)
+        if section == 0{
+            let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HomeHeaderView.Identifier) as! HomeHeaderView
+            if let currentModel = viewModel?.weatherModel {
+                headerView.loadData(weatherModel: currentModel)
+            }
+            headerView.backgroundColor = .white
+            return headerView
         }
-        return headerView
+        else{
+            let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: TimelyDataHeaderView.Identifier) as! TimelyDataHeaderView
+            if let currentModel = viewModel?.weatherModel?.hourly {
+                headerView.loadData(timeArray: currentModel)
+            }
+            return headerView
+            
+        }
     }
 }
 
 extension HomeViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return [0,1].contains(section) ? 0 : 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

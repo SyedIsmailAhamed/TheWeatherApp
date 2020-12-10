@@ -59,15 +59,40 @@ open class Messages: SwiftMessages {
 }
 
 extension Double {
-    func toCelsius() -> Double {
-        return self - 273.15
+    func toCelsius() -> String {
+        let result = self - 273.15
+        return String(format: "%.0f",result) + "\u{00B0}"
     }
-    func toFahrenheit() -> Double {
-        return self * 9/5 - 459.67
+    func toFahrenheit() -> String {
+        let result = self * 9/5 - 459.67
+        return String(format: "%.0f",result) + "\u{00B0}"
     }
-    func toString() -> String {
-        return String(format: "%.0f",self)
+
+    func getDateStringFromUTC() -> String {
+        let date = Date(timeIntervalSince1970: self)
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US")
+        dateFormatter.dateFormat = "HH"
+
+        return dateFormatter.string(from: date)
     }
 }
 
+extension Int{
+    func toDateString(format:String)->String{
+        let unixDate = self
+        let date = Date(timeIntervalSince1970: Double(unixDate))
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        let str = dateFormatter.string(from: date)
+        return str
+    }
+    
+}
 
+extension UICollectionView{
+    func dequeueCell<T>(identifier: String, indexPath: IndexPath) -> T {
+        return self.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! T
+    }
+}
