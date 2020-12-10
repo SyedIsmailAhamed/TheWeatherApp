@@ -14,15 +14,6 @@
 		5C1D94D22580C877006A538F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D94D02580C877006A538F /* LaunchScreen.storyboard */; };
 		5C1D94DD2580C878006A538F /* TheWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D94DC2580C878006A538F /* TheWeatherAppTests.swift */; };
 		5C1D94E82580C878006A538F /* TheWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D94E72580C878006A538F /* TheWeatherAppUITests.swift */; };
-		5C1D954F25811244006A538F /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D954E25811244006A538F /* Development.xcconfig */; };
-		5C1D955025811244006A538F /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D954E25811244006A538F /* Development.xcconfig */; };
-		5C1D955125811244006A538F /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D954E25811244006A538F /* Development.xcconfig */; };
-		5C1D955925811253006A538F /* QA.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D955825811253006A538F /* QA.xcconfig */; };
-		5C1D955A25811253006A538F /* QA.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D955825811253006A538F /* QA.xcconfig */; };
-		5C1D955B25811253006A538F /* QA.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D955825811253006A538F /* QA.xcconfig */; };
-		5C1D956025811262006A538F /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D955F25811262006A538F /* Production.xcconfig */; };
-		5C1D956125811262006A538F /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D955F25811262006A538F /* Production.xcconfig */; };
-		5C1D956225811262006A538F /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D955F25811262006A538F /* Production.xcconfig */; };
 		5C1D95892581197C006A538F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D95882581197C006A538F /* Environment.swift */; };
 		5C1D958A2581197C006A538F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D95882581197C006A538F /* Environment.swift */; };
 		5C1D958B2581197C006A538F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D95882581197C006A538F /* Environment.swift */; };
@@ -537,7 +528,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					5C1D94C12580C877006A538F = {
 						CreatedOnToolsVersion = 12.0;
@@ -577,12 +568,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1D955925811253006A538F /* QA.xcconfig in Resources */,
 				5CB57986258219D60031F727 /* TimelyDataHeaderView.xib in Resources */,
 				5CB57961258207620031F727 /* HomeHeaderView.xib in Resources */,
 				5C1D94D22580C877006A538F /* LaunchScreen.storyboard in Resources */,
 				5C1D94CF2580C877006A538F /* Assets.xcassets in Resources */,
-				5C1D954F25811244006A538F /* Development.xcconfig in Resources */,
 				5CB57A252582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
 				5CB57A0825822E4E0031F727 /* DaysTableViewCell.xib in Resources */,
 				5CB57975258213720031F727 /* Louis George Cafe Bold.ttf in Resources */,
@@ -590,7 +579,6 @@
 				5CB57974258213720031F727 /* Louis George Cafe.ttf in Resources */,
 				5C1D94CD2580C877006A538F /* Main.storyboard in Resources */,
 				5CB57A10258237DF0031F727 /* DetailsViewController.xib in Resources */,
-				5C1D956025811262006A538F /* Production.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,13 +587,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CD397F625828204006E3E66 /* Main.storyboard in Resources */,
-				5C1D955A25811253006A538F /* QA.xcconfig in Resources */,
 				5CB57962258207620031F727 /* HomeHeaderView.xib in Resources */,
 				5CB57A262582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
 				5CD3980D2582891B006E3E66 /* weather.json in Resources */,
 				5CB57A11258237DF0031F727 /* DetailsViewController.xib in Resources */,
-				5C1D955025811244006A538F /* Development.xcconfig in Resources */,
-				5C1D956125811262006A538F /* Production.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,12 +599,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CD397F725828205006E3E66 /* Main.storyboard in Resources */,
-				5C1D955B25811253006A538F /* QA.xcconfig in Resources */,
 				5CB57963258207620031F727 /* HomeHeaderView.xib in Resources */,
 				5CB57A272582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
 				5CB57A12258237DF0031F727 /* DetailsViewController.xib in Resources */,
-				5C1D955125811244006A538F /* Development.xcconfig in Resources */,
-				5C1D956225811262006A538F /* Production.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

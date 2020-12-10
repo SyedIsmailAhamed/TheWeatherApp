@@ -63,13 +63,8 @@ extension HomeViewController : CLLocationManagerDelegate{
             currentLocation = locations.last
             Commons.currentLocation = currentLocation
             fetchData()
-
-            //            locationManager?.stopMonitoringSignificantLocationChanges()
-            //            let locationValue:CLLocationCoordinate2D = manager.location!.coordinate
-            //
-            //            print("locations = \(locationValue)")
-            //
-            //            locationManager?.stopUpdatingLocation()
+            locationManager?.stopMonitoringSignificantLocationChanges()
+            locationManager?.stopUpdatingLocation()
         }
     }
 
