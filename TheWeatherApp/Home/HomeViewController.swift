@@ -21,6 +21,11 @@ class HomeViewController: BaseViewController {
         setupLocationManager()
         setupTableView()
 
+        //for simulator i simulated dubai's location
+        if AppPlatform.isSimulator {
+           currentLocation = CLLocation(latitude: 25.2048, longitude: 55.2708)
+            fetchData()
+        }
     }
     func setupTableView(){
         tblView.estimatedSectionHeaderHeight = 300

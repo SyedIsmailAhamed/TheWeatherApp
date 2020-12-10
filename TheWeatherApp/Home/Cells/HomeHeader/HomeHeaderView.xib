@@ -61,13 +61,13 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnZ-cN-hdK" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnZ-cN-hdK" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
                                     <rect key="frame" x="130" y="2.5" width="57" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sj-4q-p1T" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sj-4q-p1T" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
                                     <rect key="frame" x="195" y="2.5" width="57" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -82,7 +82,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U98-IQ-qlO">
                                     <rect key="frame" x="325" y="0.0" width="57" height="25"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                    <state key="normal" title="C/F">
+                                    <state key="normal" title="  ">
                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
@@ -125,7 +125,7 @@
             <size key="intrinsicContentSize" width="83.5" height="70"/>
         </designable>
         <designable name="9Sj-4q-p1T">
-            <size key="intrinsicContentSize" width="32.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="22" height="20.5"/>
         </designable>
         <designable name="YTJ-UX-8Qa">
             <size key="intrinsicContentSize" width="17.5" height="20.5"/>
@@ -135,7 +135,7 @@
             <size key="intrinsicContentSize" width="17.5" height="20.5"/>
         </designable>
         <designable name="qnZ-cN-hdK">
-            <size key="intrinsicContentSize" width="32.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="22" height="20.5"/>
         </designable>
         <designable name="ztL-I6-Smk">
             <size key="intrinsicContentSize" width="17.5" height="20.5"/>

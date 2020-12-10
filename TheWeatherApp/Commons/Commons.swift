@@ -38,3 +38,8 @@ enum UnitsofMeasurement {
     case celsius
     case fahrenheit
 }
+struct AppPlatform {
+    static var isSimulator: Bool {
+        return TARGET_OS_SIMULATOR != 0
+    }
+}

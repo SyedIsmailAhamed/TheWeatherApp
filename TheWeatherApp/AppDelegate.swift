@@ -9,6 +9,7 @@ import UIKit
 import RealmSwift
 import CoreLocation
 import BackgroundTasks
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,13 +32,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        application.registerForRemoteNotifications()
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+            (granted, error) in
+            //Parse errors and track state
+        }
 
-        
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.syed.TheWeatherApp",
-                                        using: nil) { (task) in
-            self.handleAppRefreshTask(task: task as! BGAppRefreshTask)
+        if #available(iOS 13, *) {
+            BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.syed.TheWeatherApp",
+                                            using: nil) { (task) in
+                self.handleAppRefreshTask(task: task as! BGAppRefreshTask)
+            }
+        } else {
 
         }
+
        
         return true
     }
