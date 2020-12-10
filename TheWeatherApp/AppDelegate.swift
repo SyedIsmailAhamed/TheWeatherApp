@@ -32,10 +32,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             }
         }
+        UNUserNotificationCenter.current().delegate = self
+
         application.registerForRemoteNotifications()
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
             (granted, error) in
             //Parse errors and track state
+            if granted{
+                self.scheduleNotification()
+            }
         }
 
         if #available(iOS 13, *) {
@@ -47,11 +52,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         }
 
-       
         return true
     }
 
+    func scheduleNotification() {
+        let center = UNUserNotificationCenter.current()
 
+        let content = UNMutableNotificationContent()
+        content.title = "Good Morning"
+        content.body = "Checkout the Weather today, using TheWeather App"
+        content.categoryIdentifier = "weather"
+        content.sound = UNNotificationSound.default
+
+        var dateComponents = DateComponents()
+        dateComponents.hour = 6
+        dateComponents.minute = 30
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(request)
+    }
     func handleAppRefreshTask(task: BGAppRefreshTask) {
         task.expirationHandler = {
             task.setTaskCompleted(success: false)
@@ -131,3 +151,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.sound, .alert,.badge])
+    }
+}
