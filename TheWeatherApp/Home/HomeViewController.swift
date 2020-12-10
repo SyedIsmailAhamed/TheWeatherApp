@@ -31,9 +31,6 @@ class HomeViewController: BaseViewController {
 
         tblView.register(timeNiB, forHeaderFooterViewReuseIdentifier: TimelyDataHeaderView.Identifier)
         tblView.register(UINib(nibName: DaysTableViewCell.Identifier, bundle: Bundle.main), forCellReuseIdentifier: DaysTableViewCell.Identifier)
-
-
-
     }
 
     func fetchData(){
@@ -54,7 +51,6 @@ class HomeViewController: BaseViewController {
         self.locationManager?.requestAlwaysAuthorization()
         locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager?.startUpdatingLocation()
-
     }
 
 }
@@ -110,7 +106,6 @@ extension HomeViewController : UITableViewDelegate{
                 headerView.loadData(timeArray: currentModel)
             }
             return headerView
-            
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
