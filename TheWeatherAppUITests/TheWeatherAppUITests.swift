@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import TheWeatherApp
 
 class TheWeatherAppUITests: XCTestCase {
 

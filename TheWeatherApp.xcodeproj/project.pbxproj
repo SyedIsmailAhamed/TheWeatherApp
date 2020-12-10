@@ -45,8 +45,6 @@
 		5CB57953258205980031F727 /* WeatherFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57951258205980031F727 /* WeatherFonts.swift */; };
 		5CB57954258205980031F727 /* WeatherFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57951258205980031F727 /* WeatherFonts.swift */; };
 		5CB5795A258207560031F727 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57959258207560031F727 /* HomeHeaderView.swift */; };
-		5CB5795B258207560031F727 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57959258207560031F727 /* HomeHeaderView.swift */; };
-		5CB5795C258207560031F727 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57959258207560031F727 /* HomeHeaderView.swift */; };
 		5CB57961258207620031F727 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57960258207620031F727 /* HomeHeaderView.xib */; };
 		5CB57974258213720031F727 /* Louis George Cafe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57972258213720031F727 /* Louis George Cafe.ttf */; };
 		5CB57975258213720031F727 /* Louis George Cafe Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57973258213720031F727 /* Louis George Cafe Bold.ttf */; };
@@ -89,6 +87,8 @@
 		5CD397FC258283D8006E3E66 /* DetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD397FB258283D8006E3E66 /* DetailsViewControllerTests.swift */; };
 		5CD398052582847A006E3E66 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD398042582847A006E3E66 /* HomeViewModelTests.swift */; };
 		5CD3980D2582891B006E3E66 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3980C2582891B006E3E66 /* weather.json */; };
+		5CD3986E2582A996006E3E66 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D94DE2580C878006A538F /* Info.plist */; };
+		5CD398722582A999006E3E66 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D94E92580C878006A538F /* Info.plist */; };
 		5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
@@ -584,6 +584,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD3986E2582A996006E3E66 /* Info.plist in Resources */,
 				5CD397F625828204006E3E66 /* Main.storyboard in Resources */,
 				5CB57A262582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
 				5CD3980D2582891B006E3E66 /* weather.json in Resources */,
@@ -598,6 +599,7 @@
 				5CD397F725828205006E3E66 /* Main.storyboard in Resources */,
 				5CB57A272582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
 				5CB57A12258237DF0031F727 /* DetailsViewController.xib in Resources */,
+				5CD398722582A999006E3E66 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,7 +765,6 @@
 				5CD397D625827D69006E3E66 /* TimelyDataHeaderView.swift in Sources */,
 				5CB57A14258237DF0031F727 /* DetailsViewController.swift in Sources */,
 				5C1D965925815D52006A538F /* HomeService.swift in Sources */,
-				5CB5795B258207560031F727 /* HomeHeaderView.swift in Sources */,
 				5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D958A2581197C006A538F /* Environment.swift in Sources */,
 				5CD397E625827DDF006E3E66 /* DaysTableViewCell.swift in Sources */,
@@ -793,7 +794,6 @@
 				5CD397E225827DD3006E3E66 /* TimelyCollectionViewCell.swift in Sources */,
 				5CB57A15258237DF0031F727 /* DetailsViewController.swift in Sources */,
 				5C1D965A25815D52006A538F /* HomeService.swift in Sources */,
-				5CB5795C258207560031F727 /* HomeHeaderView.swift in Sources */,
 				5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */,
 				5CD397DA25827D6B006E3E66 /* TimelyDataHeaderView.swift in Sources */,
 				5C1D958B2581197C006A538F /* Environment.swift in Sources */,
@@ -1008,7 +1008,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3SA3JYCR3;
 				INFOPLIST_FILE = TheWeatherAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1031,7 +1031,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3SA3JYCR3;
 				INFOPLIST_FILE = TheWeatherAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1179,7 +1179,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U3SA3JYCR3;
 				INFOPLIST_FILE = TheWeatherAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
