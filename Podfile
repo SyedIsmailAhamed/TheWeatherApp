@@ -33,6 +33,7 @@ post_install do |installer|
       config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
       config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
       config.build_settings['SWIFT_SUPPRESS_WARNINGS'] = "YES"
+      config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = "YES"
     end
   end
 end
