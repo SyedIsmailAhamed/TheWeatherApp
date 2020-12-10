@@ -10,10 +10,8 @@ import RealmSwift
 import CoreLocation
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var locationManager: CLLocationManager!
-    var currentLocation: CLLocation?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -23,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate 
         let userArr = StorageManager.shared().fetchData(with: User.self)
         if userArr.count > 0 {
             Commons.currentUser = userArr[0]
-            print("saved user is \(Commons.currentUser?.iD)")
         } else {
             //assuming first time
             let currentUser = User.shared()
@@ -33,36 +30,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate,CLLocationManagerDelegate 
                 }
             }
         }
-        setupLocationManager()
+
+        for family: String in UIFont.familyNames
+        {
+            print(family)
+            for names: String in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
+        }
+        
         return true
     }
 
-    func setupLocationManager(){
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-        self.locationManager?.requestAlwaysAuthorization()
-        locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        locationManager?.startUpdatingLocation()
-
-    }
-    // Below method will provide you current location.
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if currentLocation == nil {
-            currentLocation = locations.last
-            Commons.currentUser?.currentLocation = currentLocation
-//            locationManager?.stopMonitoringSignificantLocationChanges()
-//            let locationValue:CLLocationCoordinate2D = manager.location!.coordinate
-//
-//            print("locations = \(locationValue)")
-//
-//            locationManager?.stopUpdatingLocation()
-        }
-    }
-
-    // Below Mehtod will print error if not able to update location.
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Error")
-    }
+   
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

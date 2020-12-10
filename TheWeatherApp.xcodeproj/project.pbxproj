@@ -47,18 +47,26 @@
 		5C1D965825815D52006A538F /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D965725815D52006A538F /* HomeService.swift */; };
 		5C1D965925815D52006A538F /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D965725815D52006A538F /* HomeService.swift */; };
 		5C1D965A25815D52006A538F /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D965725815D52006A538F /* HomeService.swift */; };
+		5CB579482582057B0031F727 /* WeatherLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB579472582057B0031F727 /* WeatherLabels.swift */; };
+		5CB579492582057B0031F727 /* WeatherLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB579472582057B0031F727 /* WeatherLabels.swift */; };
+		5CB5794A2582057B0031F727 /* WeatherLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB579472582057B0031F727 /* WeatherLabels.swift */; };
+		5CB57952258205980031F727 /* WeatherFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57951258205980031F727 /* WeatherFonts.swift */; };
+		5CB57953258205980031F727 /* WeatherFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57951258205980031F727 /* WeatherFonts.swift */; };
+		5CB57954258205980031F727 /* WeatherFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57951258205980031F727 /* WeatherFonts.swift */; };
+		5CB5795A258207560031F727 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57959258207560031F727 /* HomeHeaderView.swift */; };
+		5CB5795B258207560031F727 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57959258207560031F727 /* HomeHeaderView.swift */; };
+		5CB5795C258207560031F727 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57959258207560031F727 /* HomeHeaderView.swift */; };
+		5CB57961258207620031F727 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57960258207620031F727 /* HomeHeaderView.xib */; };
+		5CB57962258207620031F727 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57960258207620031F727 /* HomeHeaderView.xib */; };
+		5CB57963258207620031F727 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57960258207620031F727 /* HomeHeaderView.xib */; };
+		5CB57974258213720031F727 /* Louis George Cafe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57972258213720031F727 /* Louis George Cafe.ttf */; };
+		5CB57975258213720031F727 /* Louis George Cafe Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57973258213720031F727 /* Louis George Cafe Bold.ttf */; };
 		5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE2112581F1E200046033 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2102581F1E200046033 /* NetworkManager.swift */; };
 		5CDAE2122581F1E200046033 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2102581F1E200046033 /* NetworkManager.swift */; };
 		5CDAE2132581F1E200046033 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2102581F1E200046033 /* NetworkManager.swift */; };
-		5CDAE21A2581F95000046033 /* Louis George Cafe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAE2182581F95000046033 /* Louis George Cafe.ttf */; };
-		5CDAE21B2581F95000046033 /* Louis George Cafe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAE2182581F95000046033 /* Louis George Cafe.ttf */; };
-		5CDAE21C2581F95000046033 /* Louis George Cafe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAE2182581F95000046033 /* Louis George Cafe.ttf */; };
-		5CDAE21D2581F95000046033 /* Louis George Cafe Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAE2192581F95000046033 /* Louis George Cafe Bold.ttf */; };
-		5CDAE21E2581F95000046033 /* Louis George Cafe Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAE2192581F95000046033 /* Louis George Cafe Bold.ttf */; };
-		5CDAE21F2581F95000046033 /* Louis George Cafe Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDAE2192581F95000046033 /* Louis George Cafe Bold.ttf */; };
 		5CDAE2272581FB9B00046033 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2262581FB9B00046033 /* Colors.swift */; };
 		5CDAE2282581FB9B00046033 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2262581FB9B00046033 /* Colors.swift */; };
 		5CDAE2292581FB9B00046033 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2262581FB9B00046033 /* Colors.swift */; };
@@ -117,10 +125,14 @@
 		5C1D963F25815CB5006A538F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		5C1D965025815D4A006A538F /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		5C1D965725815D52006A538F /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		5CB579472582057B0031F727 /* WeatherLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLabels.swift; sourceTree = "<group>"; };
+		5CB57951258205980031F727 /* WeatherFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFonts.swift; sourceTree = "<group>"; };
+		5CB57959258207560031F727 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		5CB57960258207620031F727 /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
+		5CB57972258213720031F727 /* Louis George Cafe.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe.ttf"; sourceTree = "<group>"; };
+		5CB57973258213720031F727 /* Louis George Cafe Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe Bold.ttf"; sourceTree = "<group>"; };
 		5CDAE1A12581E62C00046033 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		5CDAE2102581F1E200046033 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		5CDAE2182581F95000046033 /* Louis George Cafe.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe.ttf"; sourceTree = "<group>"; };
-		5CDAE2192581F95000046033 /* Louis George Cafe Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe Bold.ttf"; sourceTree = "<group>"; };
 		5CDAE2262581FB9B00046033 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5CDAE22E2581FBF000046033 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5CDAE2382581FCB200046033 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -216,6 +228,7 @@
 				5C1D94CE2580C877006A538F /* Assets.xcassets */,
 				5C1D94D02580C877006A538F /* LaunchScreen.storyboard */,
 				5C1D94D32580C877006A538F /* Info.plist */,
+				5CB57971258213410031F727 /* Resources */,
 			);
 			path = TheWeatherApp;
 			sourceTree = "<group>";
@@ -261,6 +274,7 @@
 		5C1D9600258153F2006A538F /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				5CB5791B2582054C0031F727 /* Labels */,
 				5CDAE2172581F95000046033 /* Fonts */,
 				5C1D960125815404006A538F /* Commons.swift */,
 				5C1D961625815711006A538F /* Extensions.swift */,
@@ -272,12 +286,39 @@
 		5C1D964925815CCC006A538F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5CB579582582072E0031F727 /* Cells */,
 				5C1D962E25815C65006A538F /* HomeViewController.swift */,
 				5C1D963F25815CB5006A538F /* HomeViewModel.swift */,
 				5C1D965025815D4A006A538F /* CityModel.swift */,
 				5C1D965725815D52006A538F /* HomeService.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		5CB5791B2582054C0031F727 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				5CB579472582057B0031F727 /* WeatherLabels.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		5CB579582582072E0031F727 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5CB57959258207560031F727 /* HomeHeaderView.swift */,
+				5CB57960258207620031F727 /* HomeHeaderView.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5CB57971258213410031F727 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5CB57973258213720031F727 /* Louis George Cafe Bold.ttf */,
+				5CB57972258213720031F727 /* Louis George Cafe.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5CDAE1A02581E61300046033 /* StorageManager */ = {
@@ -291,8 +332,7 @@
 		5CDAE2172581F95000046033 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5CDAE2182581F95000046033 /* Louis George Cafe.ttf */,
-				5CDAE2192581F95000046033 /* Louis George Cafe Bold.ttf */,
+				5CB57951258205980031F727 /* WeatherFonts.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -424,12 +464,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CDAE21A2581F95000046033 /* Louis George Cafe.ttf in Resources */,
 				5C1D955925811253006A538F /* QA.xcconfig in Resources */,
+				5CB57961258207620031F727 /* HomeHeaderView.xib in Resources */,
 				5C1D94D22580C877006A538F /* LaunchScreen.storyboard in Resources */,
-				5CDAE21D2581F95000046033 /* Louis George Cafe Bold.ttf in Resources */,
 				5C1D94CF2580C877006A538F /* Assets.xcassets in Resources */,
 				5C1D954F25811244006A538F /* Development.xcconfig in Resources */,
+				5CB57975258213720031F727 /* Louis George Cafe Bold.ttf in Resources */,
+				5CB57974258213720031F727 /* Louis George Cafe.ttf in Resources */,
 				5C1D94CD2580C877006A538F /* Main.storyboard in Resources */,
 				5C1D956025811262006A538F /* Production.xcconfig in Resources */,
 			);
@@ -439,9 +480,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CDAE21E2581F95000046033 /* Louis George Cafe Bold.ttf in Resources */,
 				5C1D955A25811253006A538F /* QA.xcconfig in Resources */,
-				5CDAE21B2581F95000046033 /* Louis George Cafe.ttf in Resources */,
+				5CB57962258207620031F727 /* HomeHeaderView.xib in Resources */,
 				5C1D955025811244006A538F /* Development.xcconfig in Resources */,
 				5C1D956125811262006A538F /* Production.xcconfig in Resources */,
 			);
@@ -451,9 +491,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CDAE21F2581F95000046033 /* Louis George Cafe Bold.ttf in Resources */,
 				5C1D955B25811253006A538F /* QA.xcconfig in Resources */,
-				5CDAE21C2581F95000046033 /* Louis George Cafe.ttf in Resources */,
+				5CB57963258207620031F727 /* HomeHeaderView.xib in Resources */,
 				5C1D955125811244006A538F /* Development.xcconfig in Resources */,
 				5C1D956225811262006A538F /* Production.xcconfig in Resources */,
 			);
@@ -569,12 +608,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB579482582057B0031F727 /* WeatherLabels.swift in Sources */,
 				5CDAE2112581F1E200046033 /* NetworkManager.swift in Sources */,
 				5C1D95892581197C006A538F /* Environment.swift in Sources */,
 				5C1D95ED258152BA006A538F /* CoreWebservice.swift in Sources */,
 				5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D962F25815C65006A538F /* HomeViewController.swift in Sources */,
 				5CDAE22F2581FBF000046033 /* BaseViewController.swift in Sources */,
+				5CB57952258205980031F727 /* WeatherFonts.swift in Sources */,
+				5CB5795A258207560031F727 /* HomeHeaderView.swift in Sources */,
 				5C1D964025815CB5006A538F /* HomeViewModel.swift in Sources */,
 				5C1D965825815D52006A538F /* HomeService.swift in Sources */,
 				5C1D94C62580C877006A538F /* AppDelegate.swift in Sources */,
@@ -597,9 +639,12 @@
 				5C1D964125815CB5006A538F /* HomeViewModel.swift in Sources */,
 				5C1D95F1258152BA006A538F /* CoreWebservice.swift in Sources */,
 				5CDAE2122581F1E200046033 /* NetworkManager.swift in Sources */,
+				5CB579492582057B0031F727 /* WeatherLabels.swift in Sources */,
 				5C1D965225815D4A006A538F /* CityModel.swift in Sources */,
 				5C1D94DD2580C878006A538F /* TheWeatherAppTests.swift in Sources */,
+				5CB57953258205980031F727 /* WeatherFonts.swift in Sources */,
 				5C1D965925815D52006A538F /* HomeService.swift in Sources */,
+				5CB5795B258207560031F727 /* HomeHeaderView.swift in Sources */,
 				5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D958A2581197C006A538F /* Environment.swift in Sources */,
 				5C1D963025815C65006A538F /* HomeViewController.swift in Sources */,
@@ -617,9 +662,12 @@
 				5C1D964225815CB5006A538F /* HomeViewModel.swift in Sources */,
 				5C1D95F2258152BB006A538F /* CoreWebservice.swift in Sources */,
 				5CDAE2132581F1E200046033 /* NetworkManager.swift in Sources */,
+				5CB5794A2582057B0031F727 /* WeatherLabels.swift in Sources */,
 				5C1D965325815D4A006A538F /* CityModel.swift in Sources */,
 				5C1D94E82580C878006A538F /* TheWeatherAppUITests.swift in Sources */,
+				5CB57954258205980031F727 /* WeatherFonts.swift in Sources */,
 				5C1D965A25815D52006A538F /* HomeService.swift in Sources */,
+				5CB5795C258207560031F727 /* HomeHeaderView.swift in Sources */,
 				5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D958B2581197C006A538F /* Environment.swift in Sources */,
 				5C1D963125815C65006A538F /* HomeViewController.swift in Sources */,

@@ -80,7 +80,6 @@ class User : Realmable {
         return currentUser
     }
     var iD : String?
-    var currentLocation: CLLocation?
 
 
     static func primaryKey() -> String? {

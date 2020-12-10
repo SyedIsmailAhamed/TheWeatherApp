@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 class HomeViewModel {
 
@@ -14,9 +15,9 @@ class HomeViewModel {
 
     }
 
-    func fetchWeatherData(completionHandler: @escaping ((Bool) -> ())) {
+    func fetchWeatherData(location: CLLocation,completionHandler: @escaping ((Bool) -> ())) {
         Commons.showActivityIndicator()
-        HomeService.getWeatherData {[weak self] (sender: RequestCallback<HomeWeather>) in
+        HomeService.getWeatherData(location: location) {[weak self] (sender: RequestCallback<HomeWeather>) in
             guard let self = self else {return completionHandler(false)}
             Commons.hideActivityIndicator()
             switch sender {

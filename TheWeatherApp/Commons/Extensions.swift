@@ -65,6 +65,9 @@ extension Double {
     func toFahrenheit() -> Double {
         return self * 9/5 - 459.67
     }
-
+    func toString() -> String {
+        return String(format: "%.0f",self)
+    }
 }
+
 

@@ -8,6 +8,7 @@
 import Foundation
 import ProgressHUD
 import UIKit
+import CoreLocation
 
 class Commons {
 
@@ -18,6 +19,7 @@ class Commons {
     }()
 
     static var currentUser: User?
+    static var currentLocation: CLLocation?
 
     static func showActivityIndicator(){
         ProgressHUD.colorHUD = UIColor.color(r: 0, g: 0, b: 0, alpha: 0.5)
