@@ -29,6 +29,7 @@ class HomeViewController: BaseViewController {
 
         tblView.register(headerNib, forHeaderFooterViewReuseIdentifier: HomeHeaderView.Identifier)
         tblView.register(timeNiB, forHeaderFooterViewReuseIdentifier: TimelyDataHeaderView.Identifier)
+        tblView.register(UINib(nibName: DaysTableViewCell.Identifier, bundle: Bundle.main), forCellReuseIdentifier: DaysTableViewCell.Identifier)
 
 
 
@@ -90,6 +91,9 @@ extension HomeViewController : UITableViewDelegate{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        (view as! UITableViewHeaderFooterView).contentView.backgroundColor = .white
+    }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0{
             let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HomeHeaderView.Identifier) as! HomeHeaderView
@@ -112,16 +116,18 @@ extension HomeViewController : UITableViewDelegate{
 
 extension HomeViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return [0,1].contains(section) ? 0 : 1
+        let daysCount = viewModel?.weatherModel?.daily?.count ?? 0
+        return section == 0 ? 0 : daysCount
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        if cell == nil
-        {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        let cell : DaysTableViewCell = tableView.dequeueReusableCell(withIdentifier: DaysTableViewCell.Identifier, for: indexPath) as! DaysTableViewCell
+
+        if let currentModel = viewModel?.weatherModel?.daily?[indexPath.row]{
+            cell.loadData(model: currentModel)
         }
-        return cell!
+
+        return cell
     }
 
 

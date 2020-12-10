@@ -68,6 +68,8 @@
 		5CB579E925821E2E0031F727 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB579E825821E2E0031F727 /* Protocols.swift */; };
 		5CB579EA25821E2E0031F727 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB579E825821E2E0031F727 /* Protocols.swift */; };
 		5CB579EB25821E2E0031F727 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB579E825821E2E0031F727 /* Protocols.swift */; };
+		5CB57A0825822E4E0031F727 /* DaysTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57A0625822E4E0031F727 /* DaysTableViewCell.xib */; };
+		5CB57A0925822E4E0031F727 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A0725822E4E0031F727 /* DaysTableViewCell.swift */; };
 		5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
@@ -143,6 +145,8 @@
 		5CB5798A25821A800031F727 /* TimelyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelyCollectionViewCell.xib; sourceTree = "<group>"; };
 		5CB5798B25821A800031F727 /* TimelyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelyCollectionViewCell.swift; sourceTree = "<group>"; };
 		5CB579E825821E2E0031F727 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		5CB57A0625822E4E0031F727 /* DaysTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaysTableViewCell.xib; sourceTree = "<group>"; };
+		5CB57A0725822E4E0031F727 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
 		5CDAE1A12581E62C00046033 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		5CDAE2102581F1E200046033 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5CDAE2262581FB9B00046033 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -320,8 +324,9 @@
 			isa = PBXGroup;
 			children = (
 				5CB5797C258219B60031F727 /* TimelyDataHeader */,
-				5CB57959258207560031F727 /* HomeHeaderView.swift */,
-				5CB57960258207620031F727 /* HomeHeaderView.xib */,
+				5CB579FF25822DAE0031F727 /* HomeHeader */,
+				5CB57A0625822E4E0031F727 /* DaysTableViewCell.xib */,
+				5CB57A0725822E4E0031F727 /* DaysTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -344,6 +349,15 @@
 				5CB5798B25821A800031F727 /* TimelyCollectionViewCell.swift */,
 			);
 			path = TimelyDataHeader;
+			sourceTree = "<group>";
+		};
+		5CB579FF25822DAE0031F727 /* HomeHeader */ = {
+			isa = PBXGroup;
+			children = (
+				5CB57959258207560031F727 /* HomeHeaderView.swift */,
+				5CB57960258207620031F727 /* HomeHeaderView.xib */,
+			);
+			path = HomeHeader;
 			sourceTree = "<group>";
 		};
 		5CDAE1A02581E61300046033 /* StorageManager */ = {
@@ -495,6 +509,7 @@
 				5C1D94D22580C877006A538F /* LaunchScreen.storyboard in Resources */,
 				5C1D94CF2580C877006A538F /* Assets.xcassets in Resources */,
 				5C1D954F25811244006A538F /* Development.xcconfig in Resources */,
+				5CB57A0825822E4E0031F727 /* DaysTableViewCell.xib in Resources */,
 				5CB57975258213720031F727 /* Louis George Cafe Bold.ttf in Resources */,
 				5CB5798C25821A800031F727 /* TimelyCollectionViewCell.xib in Resources */,
 				5CB57974258213720031F727 /* Louis George Cafe.ttf in Resources */,
@@ -639,6 +654,7 @@
 				5CDAE2112581F1E200046033 /* NetworkManager.swift in Sources */,
 				5C1D95892581197C006A538F /* Environment.swift in Sources */,
 				5C1D95ED258152BA006A538F /* CoreWebservice.swift in Sources */,
+				5CB57A0925822E4E0031F727 /* DaysTableViewCell.swift in Sources */,
 				5CB5798D25821A800031F727 /* TimelyCollectionViewCell.swift in Sources */,
 				5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D962F25815C65006A538F /* HomeViewController.swift in Sources */,
