@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ObjectMapper (4.2.0)
+  - ProgressHUD (13.4)
+  - SwiftMessages (8.0.3):
+    - SwiftMessages/App (= 8.0.3)
+  - SwiftMessages/App (8.0.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8)
+  - ObjectMapper
+  - ProgressHUD
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ObjectMapper
+    - ProgressHUD
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
+  SwiftMessages: 063ec9ffea3ffa7d17ba595157a9ec78e4fe045f
+
+PODFILE CHECKSUM: 8080c72e06b8cb4728ea86ec5c3e9980d84ee770
+
+COCOAPODS: 1.10.0

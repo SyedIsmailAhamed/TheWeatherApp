@@ -1,0 +1,24 @@
+//
+//  Development.xcconfig
+//  TheWeatherApp
+//
+//  Created by OSE on 12/9/20.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+#include "Pods/Target Support Files/Pods-TheWeatherApp/Pods-TheWeatherApp.develop.xcconfig"
+
+// Server URL
+ROOT_URL = https:/$()/api.openweathermap.org/data/2.5/onecall?
+
+// Keys
+API_KEY = 65df3121549a9bde0f67ac2e4e35d24f
+
+// App Settings
+APP_NAME = Weather (dev)
+APP_BUNDLE_ID = com.syed.TheWeatherAppDev
+
+
