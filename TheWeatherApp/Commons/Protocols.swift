@@ -23,3 +23,12 @@ extension UICollectionViewCell: Identifiable {
 extension UITableViewHeaderFooterView: Identifiable {
     static var Identifier: String { return String(describing: self)}
 }
+
+protocol HeaderModelable {
+    var cityTitle: String {get}
+    var weatherTitle: String { get }
+    var temperature: Double { get }
+    var maxTemp: Double { get }
+    var minTemp: Double { get }
+
+}

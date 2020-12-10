@@ -20,10 +20,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="04I-UI-AtG">
-                    <rect key="frame" x="0.0" y="16" width="414" height="179"/>
+                    <rect key="frame" x="16" y="16" width="382" height="179"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36x-VJ-ALw" customClass="CityLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="25"/>
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="uee-nj-On2"/>
                             </constraints>
@@ -32,7 +32,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyT-kr-N9O" customClass="HeaderTitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="33" width="414" height="25"/>
+                            <rect key="frame" x="0.0" y="33" width="382" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="25" id="Mw4-FI-vIY"/>
                             </constraints>
@@ -41,7 +41,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74k-x1-7yp" customClass="TemperatureLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="66" width="414" height="113"/>
+                            <rect key="frame" x="0.0" y="66" width="382" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="80" id="EQ1-PS-zDo"/>
                             </constraints>
@@ -49,17 +49,17 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="13Y-T2-Hmh">
-                            <rect key="frame" x="0.0" y="179" width="414" height="25"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="13Y-T2-Hmh">
+                            <rect key="frame" x="0.0" y="154" width="382" height="25"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztL-I6-Smk" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="2.5" width="203" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="2.5" width="187" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-UX-8Qa" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                                    <rect key="frame" x="211" y="2.5" width="203" height="20.5"/>
+                                    <rect key="frame" x="195" y="2.5" width="187" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -75,10 +75,10 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="04I-UI-AtG" secondAttribute="bottom" constant="16" id="C1z-gC-zsM"/>
-                <constraint firstItem="04I-UI-AtG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="gja-kd-MY6"/>
-                <constraint firstItem="04I-UI-AtG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gsz-Do-lXe"/>
-                <constraint firstItem="04I-UI-AtG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sAH-j7-3Ua"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="04I-UI-AtG" secondAttribute="bottom" constant="16" id="D5y-3j-bHy"/>
+                <constraint firstItem="04I-UI-AtG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="goh-eU-MQd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="04I-UI-AtG" secondAttribute="trailing" constant="16" id="hc3-HF-7mV"/>
+                <constraint firstItem="04I-UI-AtG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="t4q-gM-z1S"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

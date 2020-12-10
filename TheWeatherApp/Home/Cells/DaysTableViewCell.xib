@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Louis George Cafe.ttf">
+            <string>LouisGeorgeCafe</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -23,18 +28,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="S2P-WH-y1K">
-                        <rect key="frame" x="188.5" y="12" width="115.5" height="20.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="S2P-WH-y1K">
+                        <rect key="frame" x="240" y="13" width="64" height="18"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4X-s2-FB6" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4X-s2-FB6" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="28" height="18"/>
+                                <fontDescription key="fontDescription" name="LouisGeorgeCafe" family="Louis George Cafe" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-Cc-bsR" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
-                                <rect key="frame" x="69" y="0.0" width="46.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-Cc-bsR" customClass="TitleLabel" customModule="TheWeatherApp" customModuleProvider="target">
+                                <rect key="frame" x="36" y="0.0" width="28" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,11 +60,13 @@
                     <constraint firstItem="fSb-uC-X3U" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="UG2-bd-cWv"/>
                     <constraint firstItem="hJy-GS-Y3P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kGG-0B-Zyq"/>
                     <constraint firstItem="fSb-uC-X3U" firstAttribute="leading" secondItem="hJy-GS-Y3P" secondAttribute="trailing" constant="16" id="pye-bC-6VN"/>
-                    <constraint firstItem="S2P-WH-y1K" firstAttribute="leading" secondItem="fSb-uC-X3U" secondAttribute="trailing" constant="16" id="ttX-bc-CJd"/>
                     <constraint firstItem="S2P-WH-y1K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tze-9y-kkT"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="S2P-WH-y1K" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.2" id="C6R-kc-q8N"/>
+            </constraints>
             <connections>
                 <outlet property="maxLabel" destination="j4X-s2-FB6" id="f8a-jL-rLm"/>
                 <outlet property="minLabel" destination="P6m-Cc-bsR" id="2gN-wx-37h"/>
@@ -71,13 +78,13 @@
     </objects>
     <designables>
         <designable name="P6m-Cc-bsR">
-            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="25.5" height="18"/>
         </designable>
         <designable name="hJy-GS-Y3P">
             <size key="intrinsicContentSize" width="41.5" height="20.5"/>
         </designable>
         <designable name="j4X-s2-FB6">
-            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="25.5" height="17.5"/>
         </designable>
     </designables>
 </document>

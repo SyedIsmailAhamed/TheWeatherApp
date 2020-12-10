@@ -67,6 +67,13 @@ extension Double {
         let result = self * 9/5 - 459.67
         return String(format: "%.0f",result) + "\u{00B0}"
     }
+    func toString() -> String {
+        return String(format: "%.0f",self)
+    }
+    func toPercentage()->String{
+        let result = self * 100
+        return String(format: "%.0f",result) + " %"
+    }
 
     func getDateStringFromUTC() -> String {
         let date = Date(timeIntervalSince1970: self)
@@ -87,6 +94,10 @@ extension Int{
         dateFormatter.dateFormat = format
         let str = dateFormatter.string(from: date)
         return str
+    }
+
+    func toString()->String{
+        return String(self)
     }
 
     

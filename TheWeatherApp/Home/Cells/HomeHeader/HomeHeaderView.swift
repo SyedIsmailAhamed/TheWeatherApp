@@ -16,23 +16,15 @@ class HomeHeaderView: UITableViewHeaderFooterView {
     @IBOutlet weak var lowLabel: UILabel!
 
     override class func awakeFromNib() {
+    }
 
-        
+    func loadData(weatherModel : HeaderModelable){
+        citylabel.text = weatherModel.cityTitle
+        weatherLabel.text = weatherModel.weatherTitle
+        temperatureLabel.text = weatherModel.temperature.toCelsius()
+        highLabel.text = "H:" + weatherModel.maxTemp.toCelsius()
+        lowLabel.text = "L:" + weatherModel.minTemp.toCelsius()
     }
-    func loadData(weatherModel : HomeWeather){
-        citylabel.text = weatherModel.timezone
-        if let weatherArr = weatherModel.current?.weather, weatherArr.count>0{
-            weatherLabel.text = weatherArr[0].desc
-        }
-        temperatureLabel.text = weatherModel.current?.temp?.toCelsius()
-       // highLabel.text = weatherModel.current.h
-    }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+
 
 }

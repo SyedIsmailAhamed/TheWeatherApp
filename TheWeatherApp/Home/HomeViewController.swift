@@ -25,9 +25,10 @@ class HomeViewController: BaseViewController {
     func setupTableView(){
         tblView.estimatedSectionHeaderHeight = 300
         let headerNib = UINib.init(nibName: HomeHeaderView.Identifier, bundle: Bundle.main)
-        let timeNiB = UINib.init(nibName: TimelyDataHeaderView.Identifier, bundle: Bundle.main)
 
         tblView.register(headerNib, forHeaderFooterViewReuseIdentifier: HomeHeaderView.Identifier)
+        let timeNiB = UINib.init(nibName: TimelyDataHeaderView.Identifier, bundle: Bundle.main)
+
         tblView.register(timeNiB, forHeaderFooterViewReuseIdentifier: TimelyDataHeaderView.Identifier)
         tblView.register(UINib(nibName: DaysTableViewCell.Identifier, bundle: Bundle.main), forCellReuseIdentifier: DaysTableViewCell.Identifier)
 
@@ -111,6 +112,13 @@ extension HomeViewController : UITableViewDelegate{
             return headerView
             
         }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedModel = viewModel?.weatherModel?.daily?[indexPath.row], let parentModel = viewModel?.weatherModel else { return }
+        let detailsVC = DetailsViewController()
+        let detailsVM = DetailsViewModel(day: selectedModel, parentModel: parentModel)
+        detailsVC.viewModel = detailsVM
+        self.present(detailsVC, animated: true, completion: nil)
     }
 }
 

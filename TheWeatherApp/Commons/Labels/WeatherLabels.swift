@@ -22,6 +22,13 @@ import UIKit
         textColor = Colors.LabelColors.headerColor
     }
 }
+@IBDesignable class DetailsLabel : UILabel{
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        font = WeatherFonts.navigationLabelFont
+        textColor = Colors.LabelColors.headerColor
+    }
+}
 @IBDesignable class CityLabel : UILabel{
     override func awakeFromNib() {
         super.awakeFromNib()

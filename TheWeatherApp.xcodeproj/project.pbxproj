@@ -70,6 +70,21 @@
 		5CB579EB25821E2E0031F727 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB579E825821E2E0031F727 /* Protocols.swift */; };
 		5CB57A0825822E4E0031F727 /* DaysTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57A0625822E4E0031F727 /* DaysTableViewCell.xib */; };
 		5CB57A0925822E4E0031F727 /* DaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A0725822E4E0031F727 /* DaysTableViewCell.swift */; };
+		5CB57A10258237DF0031F727 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57A0E258237DF0031F727 /* DetailsViewController.xib */; };
+		5CB57A11258237DF0031F727 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57A0E258237DF0031F727 /* DetailsViewController.xib */; };
+		5CB57A12258237DF0031F727 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57A0E258237DF0031F727 /* DetailsViewController.xib */; };
+		5CB57A13258237DF0031F727 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A0F258237DF0031F727 /* DetailsViewController.swift */; };
+		5CB57A14258237DF0031F727 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A0F258237DF0031F727 /* DetailsViewController.swift */; };
+		5CB57A15258237DF0031F727 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A0F258237DF0031F727 /* DetailsViewController.swift */; };
+		5CB57A1D258238AA0031F727 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A1C258238AA0031F727 /* DetailsViewModel.swift */; };
+		5CB57A1E258238AA0031F727 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A1C258238AA0031F727 /* DetailsViewModel.swift */; };
+		5CB57A1F258238AA0031F727 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A1C258238AA0031F727 /* DetailsViewModel.swift */; };
+		5CB57A252582416C0031F727 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57A232582416C0031F727 /* DetailsTableViewCell.xib */; };
+		5CB57A262582416C0031F727 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57A232582416C0031F727 /* DetailsTableViewCell.xib */; };
+		5CB57A272582416C0031F727 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57A232582416C0031F727 /* DetailsTableViewCell.xib */; };
+		5CB57A282582416C0031F727 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A242582416C0031F727 /* DetailsTableViewCell.swift */; };
+		5CB57A292582416C0031F727 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A242582416C0031F727 /* DetailsTableViewCell.swift */; };
+		5CB57A2A2582416C0031F727 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57A242582416C0031F727 /* DetailsTableViewCell.swift */; };
 		5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
 		5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
@@ -147,6 +162,11 @@
 		5CB579E825821E2E0031F727 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		5CB57A0625822E4E0031F727 /* DaysTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaysTableViewCell.xib; sourceTree = "<group>"; };
 		5CB57A0725822E4E0031F727 /* DaysTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysTableViewCell.swift; sourceTree = "<group>"; };
+		5CB57A0E258237DF0031F727 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		5CB57A0F258237DF0031F727 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		5CB57A1C258238AA0031F727 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		5CB57A232582416C0031F727 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		5CB57A242582416C0031F727 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		5CDAE1A12581E62C00046033 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		5CDAE2102581F1E200046033 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5CDAE2262581FB9B00046033 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -239,6 +259,7 @@
 				5CDAE1A02581E61300046033 /* StorageManager */,
 				5C1D94C72580C877006A538F /* SceneDelegate.swift */,
 				5C1D94C52580C877006A538F /* AppDelegate.swift */,
+				5CB57A0D258237C80031F727 /* Details */,
 				5C1D964925815CCC006A538F /* Home */,
 				5C1D94CB2580C877006A538F /* Main.storyboard */,
 				5C1D94CE2580C877006A538F /* Assets.xcassets */,
@@ -358,6 +379,26 @@
 				5CB57960258207620031F727 /* HomeHeaderView.xib */,
 			);
 			path = HomeHeader;
+			sourceTree = "<group>";
+		};
+		5CB57A0D258237C80031F727 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				5CB57A0E258237DF0031F727 /* DetailsViewController.xib */,
+				5CB57A0F258237DF0031F727 /* DetailsViewController.swift */,
+				5CB57A1C258238AA0031F727 /* DetailsViewModel.swift */,
+				5CB57A2E258241700031F727 /* Cell */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		5CB57A2E258241700031F727 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5CB57A232582416C0031F727 /* DetailsTableViewCell.xib */,
+				5CB57A242582416C0031F727 /* DetailsTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		5CDAE1A02581E61300046033 /* StorageManager */ = {
@@ -509,11 +550,13 @@
 				5C1D94D22580C877006A538F /* LaunchScreen.storyboard in Resources */,
 				5C1D94CF2580C877006A538F /* Assets.xcassets in Resources */,
 				5C1D954F25811244006A538F /* Development.xcconfig in Resources */,
+				5CB57A252582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
 				5CB57A0825822E4E0031F727 /* DaysTableViewCell.xib in Resources */,
 				5CB57975258213720031F727 /* Louis George Cafe Bold.ttf in Resources */,
 				5CB5798C25821A800031F727 /* TimelyCollectionViewCell.xib in Resources */,
 				5CB57974258213720031F727 /* Louis George Cafe.ttf in Resources */,
 				5C1D94CD2580C877006A538F /* Main.storyboard in Resources */,
+				5CB57A10258237DF0031F727 /* DetailsViewController.xib in Resources */,
 				5C1D956025811262006A538F /* Production.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +567,8 @@
 			files = (
 				5C1D955A25811253006A538F /* QA.xcconfig in Resources */,
 				5CB57962258207620031F727 /* HomeHeaderView.xib in Resources */,
+				5CB57A262582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
+				5CB57A11258237DF0031F727 /* DetailsViewController.xib in Resources */,
 				5C1D955025811244006A538F /* Development.xcconfig in Resources */,
 				5C1D956125811262006A538F /* Production.xcconfig in Resources */,
 			);
@@ -535,6 +580,8 @@
 			files = (
 				5C1D955B25811253006A538F /* QA.xcconfig in Resources */,
 				5CB57963258207620031F727 /* HomeHeaderView.xib in Resources */,
+				5CB57A272582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
+				5CB57A12258237DF0031F727 /* DetailsViewController.xib in Resources */,
 				5C1D955125811244006A538F /* Development.xcconfig in Resources */,
 				5C1D956225811262006A538F /* Production.xcconfig in Resources */,
 			);
@@ -653,12 +700,15 @@
 				5CB579482582057B0031F727 /* WeatherLabels.swift in Sources */,
 				5CDAE2112581F1E200046033 /* NetworkManager.swift in Sources */,
 				5C1D95892581197C006A538F /* Environment.swift in Sources */,
+				5CB57A13258237DF0031F727 /* DetailsViewController.swift in Sources */,
 				5C1D95ED258152BA006A538F /* CoreWebservice.swift in Sources */,
 				5CB57A0925822E4E0031F727 /* DaysTableViewCell.swift in Sources */,
+				5CB57A282582416C0031F727 /* DetailsTableViewCell.swift in Sources */,
 				5CB5798D25821A800031F727 /* TimelyCollectionViewCell.swift in Sources */,
 				5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D962F25815C65006A538F /* HomeViewController.swift in Sources */,
 				5CDAE22F2581FBF000046033 /* BaseViewController.swift in Sources */,
+				5CB57A1D258238AA0031F727 /* DetailsViewModel.swift in Sources */,
 				5CB57952258205980031F727 /* WeatherFonts.swift in Sources */,
 				5CB5795A258207560031F727 /* HomeHeaderView.swift in Sources */,
 				5C1D964025815CB5006A538F /* HomeViewModel.swift in Sources */,
@@ -679,16 +729,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CDAE2302581FBF000046033 /* BaseViewController.swift in Sources */,
+				5CB57A1E258238AA0031F727 /* DetailsViewModel.swift in Sources */,
 				5C1D961825815711006A538F /* Extensions.swift in Sources */,
 				5CDAE2282581FB9B00046033 /* Colors.swift in Sources */,
 				5C1D960325815404006A538F /* Commons.swift in Sources */,
 				5C1D964125815CB5006A538F /* HomeViewModel.swift in Sources */,
+				5CB57A292582416C0031F727 /* DetailsTableViewCell.swift in Sources */,
 				5C1D95F1258152BA006A538F /* CoreWebservice.swift in Sources */,
 				5CDAE2122581F1E200046033 /* NetworkManager.swift in Sources */,
 				5CB579492582057B0031F727 /* WeatherLabels.swift in Sources */,
 				5C1D965225815D4A006A538F /* CityModel.swift in Sources */,
 				5C1D94DD2580C878006A538F /* TheWeatherAppTests.swift in Sources */,
 				5CB57953258205980031F727 /* WeatherFonts.swift in Sources */,
+				5CB57A14258237DF0031F727 /* DetailsViewController.swift in Sources */,
 				5C1D965925815D52006A538F /* HomeService.swift in Sources */,
 				5CB5795B258207560031F727 /* HomeHeaderView.swift in Sources */,
 				5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */,
@@ -703,16 +756,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CDAE2312581FBF000046033 /* BaseViewController.swift in Sources */,
+				5CB57A1F258238AA0031F727 /* DetailsViewModel.swift in Sources */,
 				5C1D961925815711006A538F /* Extensions.swift in Sources */,
 				5CDAE2292581FB9B00046033 /* Colors.swift in Sources */,
 				5C1D960425815404006A538F /* Commons.swift in Sources */,
 				5C1D964225815CB5006A538F /* HomeViewModel.swift in Sources */,
+				5CB57A2A2582416C0031F727 /* DetailsTableViewCell.swift in Sources */,
 				5C1D95F2258152BB006A538F /* CoreWebservice.swift in Sources */,
 				5CDAE2132581F1E200046033 /* NetworkManager.swift in Sources */,
 				5CB5794A2582057B0031F727 /* WeatherLabels.swift in Sources */,
 				5C1D965325815D4A006A538F /* CityModel.swift in Sources */,
 				5C1D94E82580C878006A538F /* TheWeatherAppUITests.swift in Sources */,
 				5CB57954258205980031F727 /* WeatherFonts.swift in Sources */,
+				5CB57A15258237DF0031F727 /* DetailsViewController.swift in Sources */,
 				5C1D965A25815D52006A538F /* HomeService.swift in Sources */,
 				5CB5795C258207560031F727 /* HomeHeaderView.swift in Sources */,
 				5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */,
