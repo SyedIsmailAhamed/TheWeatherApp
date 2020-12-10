@@ -8,9 +8,40 @@
 import Foundation
 
 class HomeViewModel {
+
+    var weatherModel : HomeWeather?
     init() {
 
     }
-    
+
+    func fetchWeatherData(completionHandler: @escaping ((Bool) -> ())) {
+        Commons.showActivityIndicator()
+        HomeService.getWeatherData {[weak self] (sender: RequestCallback<HomeWeather>) in
+            guard let self = self else {return completionHandler(false)}
+            Commons.hideActivityIndicator()
+            switch sender {
+            case .success(let object):
+                self.weatherModel = object
+                if let currentWeather = self.weatherModel{
+                    StorageManager.shared().saveData(model: currentWeather) { (status) in
+                        print("weather data stored to realm")
+
+                        let test = StorageManager.shared().fetchData(with: HomeWeather.self)
+                        print("test count \(test.count)")
+                    }
+
+                }
+                completionHandler(true)
+            case .failed(let error):
+                switch error {
+                case .gernalError(let message):
+                    Messages.showMessage(message: message, theme: .error)
+                default:
+                    Messages.showMessage(message: error.localizedDescription, theme: .error)
+                }
+                completionHandler(false)
+            }
+        }
+    }
 
 }

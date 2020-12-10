@@ -2,29 +2,48 @@ PODS:
   - Alamofire (4.9.1)
   - ObjectMapper (4.2.0)
   - ProgressHUD (13.4)
+  - Realm (5.0.3):
+    - Realm/Headers (= 5.0.3)
+  - Realm/Headers (5.0.3)
+  - RealmSwift (5.0.3):
+    - Realm (= 5.0.3)
+  - RuntimeNew (2.1.5)
   - SwiftMessages (8.0.3):
     - SwiftMessages/App (= 8.0.3)
   - SwiftMessages/App (8.0.3)
+  - Unrealm (1.3.5):
+    - RealmSwift (= 5.0.3)
+    - RuntimeNew (= 2.1.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8)
   - ObjectMapper
   - ProgressHUD
+  - RealmSwift
   - SwiftMessages
+  - Unrealm
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - ObjectMapper
     - ProgressHUD
+    - Realm
+    - RealmSwift
+    - RuntimeNew
     - SwiftMessages
+    - Unrealm
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
+  Realm: bfca1699b61b0b17c3a69ae0e648314eae91fbdb
+  RealmSwift: 493c9f089cd3893b3959007973c0e4f640906ba0
+  RuntimeNew: ef34cf1783be4c1cbe798970bc590924dab5df87
   SwiftMessages: 063ec9ffea3ffa7d17ba595157a9ec78e4fe045f
+  Unrealm: ba1c168935344084ba28dd6bff5ded86f4837d7f
 
-PODFILE CHECKSUM: 8080c72e06b8cb4728ea86ec5c3e9980d84ee770
+PODFILE CHECKSUM: 347f10c0defee43d0ce62e22cd840e8b4af838c1
 
 COCOAPODS: 1.10.0

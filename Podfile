@@ -10,7 +10,8 @@ target 'TheWeatherApp' do
     pod 'Alamofire', '~> 4.8'
     pod 'SwiftMessages'
     pod 'ProgressHUD'
-
+    pod 'RealmSwift'
+    pod 'Unrealm'
 
   target 'TheWeatherAppTests' do
     inherit! :search_paths
@@ -24,3 +25,13 @@ target 'TheWeatherApp' do
 end
 
 
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+
+    end
+  end
+end

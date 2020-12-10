@@ -7,8 +7,15 @@
 
 import Foundation
 import ObjectMapper
+import RealmSwift
+import Unrealm
 
-struct HomeWeather : Mappable {
+struct HomeWeather : Realmable, Mappable {
+
+    init() {
+        
+    }
+
     var lat : Double?
     var lon : Double?
     var timezone : String?
@@ -16,6 +23,11 @@ struct HomeWeather : Mappable {
     var current : Current?
     var hourly : [Hourly]?
     var daily : [Daily]?
+    var iD : String = Commons.currentUser?.iD ?? ""
+
+    static func primaryKey() -> String? {
+        return "iD"
+    }
 
     init?(map: Map) {
 
@@ -35,7 +47,9 @@ struct HomeWeather : Mappable {
 }
 
 
-struct Current : Mappable {
+struct Current :Realmable, Mappable {
+
+
     var dt : Int?
     var sunrise : Int?
     var sunset : Int?
@@ -52,6 +66,9 @@ struct Current : Mappable {
     var weather : [Weather]?
 
     init?(map: Map) {
+
+    }
+    init() {
 
     }
 
@@ -74,7 +91,7 @@ struct Current : Mappable {
     }
 
 }
-struct Hourly : Mappable {
+struct Hourly :Realmable, Mappable {
     var dt : Int?
     var temp : Double?
     var feels_like : Double?
@@ -92,7 +109,9 @@ struct Hourly : Mappable {
     init?(map: Map) {
 
     }
+    init() {
 
+    }
     mutating func mapping(map: Map) {
 
         dt <- map["dt"]
@@ -111,7 +130,7 @@ struct Hourly : Mappable {
     }
 
 }
-struct Daily : Mappable {
+struct Daily : Realmable,Mappable {
     var dt : Int?
     var sunrise : Int?
     var sunset : Int?
@@ -130,7 +149,9 @@ struct Daily : Mappable {
     init?(map: Map) {
 
     }
+    init() {
 
+    }
     mutating func mapping(map: Map) {
 
         dt <- map["dt"]
@@ -151,7 +172,7 @@ struct Daily : Mappable {
 
 }
 
-struct FeelsLike : Mappable {
+struct FeelsLike :Realmable, Mappable {
     var day : Double?
     var night : Double?
     var eve : Double?
@@ -160,7 +181,9 @@ struct FeelsLike : Mappable {
     init?(map: Map) {
 
     }
+    init() {
 
+    }
     mutating func mapping(map: Map) {
 
         day <- map["day"]
@@ -170,7 +193,7 @@ struct FeelsLike : Mappable {
     }
 
 }
-struct Temperature : Mappable {
+struct Temperature :Realmable, Mappable {
     var day : Double?
     var min : Double?
     var max : Double?
@@ -181,7 +204,9 @@ struct Temperature : Mappable {
     init?(map: Map) {
 
     }
+    init() {
 
+    }
     mutating func mapping(map: Map) {
 
         day <- map["day"]
@@ -193,20 +218,22 @@ struct Temperature : Mappable {
     }
 
 }
-struct Weather : Mappable {
+struct Weather : Realmable,Mappable {
     var id : Int?
     var main : String?
-    var description : String?
+    var desc : String?
     var icon : String?
 
     init?(map: Map) {
 
     }
+    init() {
 
+    }
     mutating func mapping(map: Map) {
         id <- map["id"]
         main <- map["main"]
-        description <- map["description"]
+        desc <- map["description"]
         icon <- map["icon"]
     }
 

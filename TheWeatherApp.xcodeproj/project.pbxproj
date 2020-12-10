@@ -47,6 +47,12 @@
 		5C1D965825815D52006A538F /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D965725815D52006A538F /* HomeService.swift */; };
 		5C1D965925815D52006A538F /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D965725815D52006A538F /* HomeService.swift */; };
 		5C1D965A25815D52006A538F /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D965725815D52006A538F /* HomeService.swift */; };
+		5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
+		5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
+		5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE1A12581E62C00046033 /* StorageManager.swift */; };
+		5CDAE2112581F1E200046033 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2102581F1E200046033 /* NetworkManager.swift */; };
+		5CDAE2122581F1E200046033 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2102581F1E200046033 /* NetworkManager.swift */; };
+		5CDAE2132581F1E200046033 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDAE2102581F1E200046033 /* NetworkManager.swift */; };
 		78A9284B63AEAAAE1443C283 /* Pods_TheWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EC4655DAC78B6DF1647BFA /* Pods_TheWeatherAppTests.framework */; };
 		80074D34C812155AA9D890AF /* Pods_TheWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97FA85F66FD8A902C67C11D /* Pods_TheWeatherApp.framework */; };
 		B72A61F90FD656BBF3525658 /* Pods_TheWeatherApp_TheWeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326C4C100E507D0220913087 /* Pods_TheWeatherApp_TheWeatherAppUITests.framework */; };
@@ -98,6 +104,8 @@
 		5C1D963F25815CB5006A538F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		5C1D965025815D4A006A538F /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		5C1D965725815D52006A538F /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		5CDAE1A12581E62C00046033 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		5CDAE2102581F1E200046033 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		7694C82A57999CAC49692757 /* Pods-TheWeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-TheWeatherAppTests/Pods-TheWeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8E96E0ACE7BCEE8C955710F /* Pods-TheWeatherApp.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherApp.qa.xcconfig"; path = "Target Support Files/Pods-TheWeatherApp/Pods-TheWeatherApp.qa.xcconfig"; sourceTree = "<group>"; };
 		CAFD8713A741AB93FF1294D5 /* Pods-TheWeatherAppTests.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWeatherAppTests.develop.xcconfig"; path = "Target Support Files/Pods-TheWeatherAppTests/Pods-TheWeatherAppTests.develop.xcconfig"; sourceTree = "<group>"; };
@@ -180,8 +188,9 @@
 				5C1D9600258153F2006A538F /* Commons */,
 				5C1D9544258111D9006A538F /* Configs */,
 				5C1D95872581196A006A538F /* NetworkManager */,
-				5C1D94C52580C877006A538F /* AppDelegate.swift */,
+				5CDAE1A02581E61300046033 /* StorageManager */,
 				5C1D94C72580C877006A538F /* SceneDelegate.swift */,
+				5C1D94C52580C877006A538F /* AppDelegate.swift */,
 				5C1D964925815CCC006A538F /* Home */,
 				5C1D94CB2580C877006A538F /* Main.storyboard */,
 				5C1D94CE2580C877006A538F /* Assets.xcassets */,
@@ -224,6 +233,7 @@
 			children = (
 				5C1D95882581197C006A538F /* Environment.swift */,
 				5C1D959A25813D50006A538F /* CoreWebservice.swift */,
+				5CDAE2102581F1E200046033 /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -246,6 +256,14 @@
 				5C1D965725815D52006A538F /* HomeService.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		5CDAE1A02581E61300046033 /* StorageManager */ = {
+			isa = PBXGroup;
+			children = (
+				5CDAE1A12581E62C00046033 /* StorageManager.swift */,
+			);
+			path = StorageManager;
 			sourceTree = "<group>";
 		};
 		F354EB2E87BEE20A50783BB8 /* Frameworks */ = {
@@ -505,8 +523,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDAE2112581F1E200046033 /* NetworkManager.swift in Sources */,
 				5C1D95892581197C006A538F /* Environment.swift in Sources */,
 				5C1D95ED258152BA006A538F /* CoreWebservice.swift in Sources */,
+				5CDAE1A22581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D962F25815C65006A538F /* HomeViewController.swift in Sources */,
 				5C1D964025815CB5006A538F /* HomeViewModel.swift in Sources */,
 				5C1D965825815D52006A538F /* HomeService.swift in Sources */,
@@ -526,9 +546,11 @@
 				5C1D960325815404006A538F /* Commons.swift in Sources */,
 				5C1D964125815CB5006A538F /* HomeViewModel.swift in Sources */,
 				5C1D95F1258152BA006A538F /* CoreWebservice.swift in Sources */,
+				5CDAE2122581F1E200046033 /* NetworkManager.swift in Sources */,
 				5C1D965225815D4A006A538F /* CityModel.swift in Sources */,
 				5C1D94DD2580C878006A538F /* TheWeatherAppTests.swift in Sources */,
 				5C1D965925815D52006A538F /* HomeService.swift in Sources */,
+				5CDAE1A32581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D958A2581197C006A538F /* Environment.swift in Sources */,
 				5C1D963025815C65006A538F /* HomeViewController.swift in Sources */,
 			);
@@ -542,9 +564,11 @@
 				5C1D960425815404006A538F /* Commons.swift in Sources */,
 				5C1D964225815CB5006A538F /* HomeViewModel.swift in Sources */,
 				5C1D95F2258152BB006A538F /* CoreWebservice.swift in Sources */,
+				5CDAE2132581F1E200046033 /* NetworkManager.swift in Sources */,
 				5C1D965325815D4A006A538F /* CityModel.swift in Sources */,
 				5C1D94E82580C878006A538F /* TheWeatherAppUITests.swift in Sources */,
 				5C1D965A25815D52006A538F /* HomeService.swift in Sources */,
+				5CDAE1A42581E62C00046033 /* StorageManager.swift in Sources */,
 				5C1D958B2581197C006A538F /* Environment.swift in Sources */,
 				5C1D963125815C65006A538F /* HomeViewController.swift in Sources */,
 			);

@@ -10,25 +10,22 @@ import Messages
 
 class HomeViewController: UIViewController {
 
+    var viewModel : HomeViewModel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Commons.showActivityIndicator()
-        HomeService.getWeatherData { (sender: RequestCallback<HomeWeather>) in
-            Commons.hideActivityIndicator()
-            switch sender {
-            case .success(let object):
-                print("current temp is \(object.current?.temp?.toFahrenheit())")
-            case .failed(let error):
-                switch error {
-                case .gernalError(let message):
-                    Messages.showMessage(message: message, theme: .error)
-                default:
-                    Messages.showMessage(message: error.localizedDescription, theme: .error)
-                }
+        viewModel = HomeViewModel()
+        viewModel?.fetchWeatherData(completionHandler: {[weak self] (status) in
+            guard let self = self,
+                  let weatherModel = self.viewModel?.weatherModel else {return}
+            if status{
+                
             }
-        }
+        })
+
         // Do any additional setup after loading the view.
+
     }
 
 
