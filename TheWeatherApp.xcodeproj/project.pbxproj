@@ -48,8 +48,6 @@
 		5CB5795B258207560031F727 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57959258207560031F727 /* HomeHeaderView.swift */; };
 		5CB5795C258207560031F727 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB57959258207560031F727 /* HomeHeaderView.swift */; };
 		5CB57961258207620031F727 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57960258207620031F727 /* HomeHeaderView.xib */; };
-		5CB57962258207620031F727 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57960258207620031F727 /* HomeHeaderView.xib */; };
-		5CB57963258207620031F727 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57960258207620031F727 /* HomeHeaderView.xib */; };
 		5CB57974258213720031F727 /* Louis George Cafe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57972258213720031F727 /* Louis George Cafe.ttf */; };
 		5CB57975258213720031F727 /* Louis George Cafe Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB57973258213720031F727 /* Louis George Cafe Bold.ttf */; };
 		5CB5797E258219CF0031F727 /* TimelyDataHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5797D258219CF0031F727 /* TimelyDataHeaderView.swift */; };
@@ -587,7 +585,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CD397F625828204006E3E66 /* Main.storyboard in Resources */,
-				5CB57962258207620031F727 /* HomeHeaderView.xib in Resources */,
 				5CB57A262582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
 				5CD3980D2582891B006E3E66 /* weather.json in Resources */,
 				5CB57A11258237DF0031F727 /* DetailsViewController.xib in Resources */,
@@ -599,7 +596,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CD397F725828205006E3E66 /* Main.storyboard in Resources */,
-				5CB57963258207620031F727 /* HomeHeaderView.xib in Resources */,
 				5CB57A272582416C0031F727 /* DetailsTableViewCell.xib in Resources */,
 				5CB57A12258237DF0031F727 /* DetailsViewController.xib in Resources */,
 			);
